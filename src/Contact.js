@@ -46,7 +46,7 @@ function Contact() {
       {/* Footer */}
       <footer className="py-8 border-t border-white/10">
         <div className="container mx-auto px-4 text-center text-gray-400 font-light">
-          <p>© 2024 Junghoon Song. All rights reserved.</p>
+          <p>© 2025 Junghoon Song. All rights reserved.</p>
         </div>
       </footer>
     </div>
