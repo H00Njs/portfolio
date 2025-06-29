@@ -17,6 +17,8 @@
 @layer components {
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-x;
+    line-height: 1.2;
+    padding-bottom: 0.1em;
   }
   
   .gradient-bg {
@@ -35,10 +37,26 @@
 
   .section-title {
     @apply font-outfit text-4xl md:text-5xl font-light tracking-tight;
+    line-height: 1.1;
+    padding-bottom: 0.05em;
   }
 
   .section-subtitle {
     @apply font-outfit text-xl md:text-2xl font-light text-gray-400;
+  }
+
+  /* Header styles */
+  .header-nav-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-300 relative;
+  }
+
+  .header-nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300;
+  }
+
+  .header-nav-link:hover::after {
+    @apply w-full;
   }
 }
 

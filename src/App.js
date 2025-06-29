@@ -1,6 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './Header';
+import Contact from './Contact';
 
-function App() {
+function Home() {
   return (
     <div className="min-h-screen bg-dark">
       {/* Hero Section */}
@@ -8,14 +11,14 @@ function App() {
         <div className="gradient-wave"></div>
         <div className="container mx-auto px-4 z-10 text-center">
           <h1 className="section-title mb-6 gradient-text">
-            Your Name
+            Junghoon Song
           </h1>
           <p className="section-subtitle mb-12">
             Purdue Student | Tech Enthusiast | Future Innovator
           </p>
-          <button className="btn-outline">
+          <a href="/contact" className="btn-outline">
             Get in Touch
-          </button>
+          </a>
         </div>
       </section>
 
@@ -93,31 +96,29 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-32">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="section-title mb-16 gradient-text">Get in Touch</h2>
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-            <a href="mailto:your.email@example.com" className="btn-outline">
-              your.email@example.com
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="btn-outline">
-              LinkedIn
-            </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="btn-outline">
-              GitHub
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-8 border-t border-white/10">
         <div className="container mx-auto px-4 text-center text-gray-400 font-light">
-          <p>© 2024 Your Name. All rights reserved.</p>
+          <p>© 2025 Junghoon Song. All rights reserved.</p>
         </div>
       </footer>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="pt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
