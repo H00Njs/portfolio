@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Contact from './Contact';
 
@@ -16,7 +16,7 @@ function Home() {
           <p className="section-subtitle mb-12">
             Purdue Student | Tech Enthusiast | Future Innovator
           </p>
-          <a href="/contact" className="btn-outline">
+          <a href="#/contact" className="btn-outline">
             Get in Touch
           </a>
         </div>
@@ -26,13 +26,18 @@ function Home() {
       <section className="py-32 relative">
         <div className="gradient-wave opacity-30"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="section-title mb-8 gradient-text">About Me</h2>
+          <h2 className="section-title mb-8 gradient-text">
+            About Me
+          </h2>
           <div className="max-w-3xl">
             <p className="text-lg text-gray-300 leading-relaxed font-light">
-              As a Purdue University student, I'm passionate about the intersection of technology and innovation. 
-              While not pursuing a Computer Science degree, I've immersed myself in the world of tech startups 
-              and emerging technologies. My goal is to bridge the gap between technical and non-technical domains, 
-              bringing fresh perspectives to the tech industry.
+              I'm an undergraduate student at Purdue University with a strong foundation in computer science and a deep interest in applying technology to solve real-world, human-centered problems. I'm proficient in Python, Java, and C, and I have experience using design tools such as Figma to enhance user experience and product design. My background includes leading a start-up club, organizing a school-wide mock investment competition, and developing an MVP for a Korean language education app—an experience that sparked my passion for combining engineering with social impact.
+              <br></br>
+              <br></br>
+              Beyond technical skills, I value creativity, empathy, and adaptability. I've explored everything from AI-driven language learning to assistive technologies inspired by personal encounters with disability-friendly devices. Whether through research, product design, or collaborative leadership, I'm driven to build solutions that are not only functional but meaningful.
+              <br></br>
+              <br></br>
+              I'm currently seeking opportunities—such as internships, research, or collaborative projects—that will allow me to further develop my technical expertise while making a tangible difference in people's lives.
             </p>
           </div>
         </div>

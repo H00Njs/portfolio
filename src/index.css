@@ -58,6 +58,31 @@
   .header-nav-link:hover::after {
     @apply w-full;
   }
+
+  .btn-gradient {
+    @apply px-5 py-2 rounded-full font-light border-2 border-transparent bg-gradient-to-r from-dark to-accent text-white shadow-md transition-all duration-300 relative overflow-hidden;
+  }
+
+  .btn-gradient:hover {
+    @apply scale-105 shadow-lg;
+    filter: brightness(1.1);
+  }
+
+  .card-unified {
+    @apply bg-white/10 rounded-2xl shadow-md p-8 backdrop-blur-sm;
+  }
+
+  .section-unified {
+    @apply py-32 bg-dark;
+  }
+
+  .heading-unified {
+    @apply font-outfit text-4xl md:text-5xl font-light tracking-tight text-white;
+  }
+
+  .subheading-unified {
+    @apply font-outfit text-xl md:text-2xl font-light text-gray-400;
+  }
 }
 
 @keyframes wave {

@@ -12,16 +12,16 @@ function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="/" className="text-xl font-outfit font-light text-white">
+          <a href="#/" className="text-xl font-outfit font-light text-white">
             JS
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="/" className="header-nav-link">
+            <a href="#/" className="header-nav-link">
               Home
             </a>
-            <a href="/contact" className="header-nav-link">
+            <a href="#/contact" className="header-nav-link">
               Contact
             </a>
           </nav>
@@ -44,14 +44,14 @@ function Header() {
         <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
           <nav className="py-4 space-y-4 border-t border-white/10">
             <a 
-              href="/" 
+              href="#/" 
               className="header-nav-link block"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </a>
             <a 
-              href="/contact" 
+              href="#/contact" 
               className="header-nav-link block"
               onClick={() => setIsMenuOpen(false)}
             >
